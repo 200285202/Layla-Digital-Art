@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Layla Cristina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            font-size: 24px;
+            background: #111;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('background.jpg') no-repeat center center/cover;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .portfolio-section {
+            padding: 50px 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background: #222;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact {
+            background: #111;
+            padding: 50px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: yellow;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Portfólio - Layla Cristina<div class="social-icons">
+            <a href="mailto:layyladantas@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/seu_instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511948572007" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        </div></header>
+
+    <section class="hero">
+        <h1>Layla Cristina</h1>
+        <p>Designer Gráfica | Criadora de Conteúdo</p>
+        <img src="imagem/logopng.png" alt="Projeto 1">
+        
+    </section>
+
+    <section class="portfolio-section">
+        <h2>Meus Projetos</h2>
+        <div class="grid-container">
+            <div class="project-card">
+                <h3>Design Gráfico</h3>
+                <p>Criação de logos, banners e materiais visuais.</p>
+            </div>
+            <div class="project-card">
+                <h3>Criação de sites</h3>
+                <p>Criação de Vitrines,Portifolio e sites</p>
+            </div>
+            <div class="project-card">
+                <h3>Tráfego Pago</h3>
+                <p>Campanhas publicitárias para aumentar engajamento.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cartão de Cartão</h3>
+                <p>Cartão virtual</p>
+            </div>
+            <div class="project-card">
+                <h3>Vitrine</h3>
+                <p>Montagem criativa para destacar seus produtos</p>
+            </div>
+            <div class="project-card">
+                <h3>Convite Interativo</h3>
+                <p>Design exclusivo para qualquer evento</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="gallery">
+        <img src="imagem/logo01.jpeg" alt="Projeto 1">
+        <img src="imagem/foto7.jpeg" alt="Projeto 2">
+        <img src="imagem/foto3.jpeg" alt="Projeto 3">
+        <img src="imagem/foto4.jpeg" alt="Projeto 4">
+        <img src="imagem/foto5.jpeg" alt="Projeto 4">
+        <img src="imagem/foto6.jpeg" alt="Projeto 4">
+    </section>
+    <section class="gallery">
+        <img src="imagem/portifolio.png" alt="Projeto 1">
+        <img src="imagem/portifolio02.png" alt="Projeto 2">
+        
+    </section>
+    <section class="gallery">
+        <img src="imagem/cartao.png" alt="Projeto 1">
+        <img src="imagem/cartao2.png" alt="Projeto 2">
+        <img src="imagem/cartao3.png" alt="Projeto 2">
+       
+    </section>
+
+
+    <footer>
+    <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
+    <div class="social-icons">
+        <a href="mailto:layyladantas@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/seu_instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511948572007" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
