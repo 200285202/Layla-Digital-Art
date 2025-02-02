@@ -42,6 +42,16 @@
 
         .hero h1 {
             font-size: 3rem;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 3s steps(30) 1s forwards;
+        }
+
+        @keyframes typing {
+            to {
+                width: 100%;
+            }
         }
 
         .portfolio-section {
@@ -101,127 +111,122 @@
         }
 
         .about-me {
-    background: #222;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
+            background: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-.about-me h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
+        .about-me h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
 
-.about-me p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .about-me p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
+        .blog {
+            background: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
 
+        .blog h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
 
-    .blog {
-    background: #222;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
 
-.blog h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
+        .post-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.blog-posts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
+        .post-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+        }
 
-.post-card {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        .post-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
 
-.post-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-}
+        .post-card p {
+            font-size: 1.1rem;
+        }
 
-.post-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
+        .post-card a {
+            color: #f0c500;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.post-card p {
-    font-size: 1.1rem;
-}
+        .post-card a:hover {
+            text-decoration: underline;
+        }
 
-.post-card a {
-    color: #f0c500;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .testimonials {
+            background: #333;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-.post-card a:hover {
-    text-decoration: underline;
-}
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
 
+        .testimonial-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
 
-     .testimonials {
-    background: #333;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
+        .testimonial-card {
+            background: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
+        .testimonial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+        }
 
-.testimonial-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
+        .testimonial-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
 
-.testimonial-card {
-    background: #444;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        .testimonial-card h4 {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
 
-.testimonial-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-}
-
-.testimonial-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.testimonial-card h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-
-        
     </style>
 </head>
 <body>
 
 <header>
- <header>Portfólio - Layla Cristina<div class="social-icons">
+    <div>Portfólio - Layla Cristina</div>
     <div class="social-icons">
         <a href="mailto:layyladantas@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
@@ -236,20 +241,16 @@
 </header>
 
 <section class="hero">
-   <h1 class="typing-effect">Layla Cristina </h1>
+    <h1 class="typing-effect">Layla Cristina</h1>
     <p>Designer Gráfica | Criadora de Conteúdo</p>
     <img src="imagem/logopng.png" alt="Projeto 1">
 </section>
 
-
-
-    <section class="about-me">
+<section class="about-me">
     <h2>Sobre Mim</h2>
     <p>Olá! Eu sou Layla Cristina, uma designer gráfica apaixonada por criar experiências visuais únicas. Com uma carreira focada em design digital, criação de conteúdo e desenvolvimento de soluções criativas, sempre busco inovar em cada projeto. Além disso, tenho um grande interesse em explorar novas ferramentas e técnicas para oferecer sempre o melhor para meus clientes.</p>
     <p>Meu objetivo é transformar ideias em realidade, ajudando marcas e indivíduos a se destacarem no mundo digital através de designs marcantes e funcionais.</p>
 </section>
-
-    
 
 <section class="portfolio-section">
     <h2>Meus Projetos</h2>
@@ -272,9 +273,7 @@
     <img src="imagem/foto6.jpeg" alt="Projeto 6">
 </section>
 
-
-
-    <section class="blog">
+<section class="blog">
     <h2>Blog</h2>
     <div class="blog-posts">
         <div class="post-card">
@@ -291,10 +290,6 @@
         </div>
     </div>
 </section>
-
-
-
-
 
 <section class="testimonials">
     <h2>O Que Nossos Clientes Dizem</h2>
@@ -313,12 +308,6 @@
         </div>
     </div>
 </section>
-
-
-  
-
-
-    
 
 <footer>
     <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
