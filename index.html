@@ -116,6 +116,28 @@
                 font-size: 2.5rem;
             }
         }
+
+
+    @keyframes logoAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero img {
+    animation: logoAnimation 2s infinite ease-in-out;
+}
+
+
+
+
+        
     </style>
 </head>
 <body>
