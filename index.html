@@ -19,110 +19,94 @@
             text-align: center;
         }
 
-       @media (max-width: 768px) {
-    .hero {
-        height: 80vh;
-        padding: 20px;
-    }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('background.jpg') no-repeat center center/cover;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            padding: 20px;
+        }
 
-    .portfolio-section {
-        padding: 30px 10px;
-    }
+        .hero h1 {
+            font-size: 3rem;
+        }
 
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-    }
+        .portfolio-section {
+            padding: 40px 20px;
+        }
 
-    .project-card {
-        padding: 15px;
-        font-size: 14px;
-    }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
 
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        padding: 20px;
-    }
+        .project-card {
+            background: #222;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-    .gallery img {
-        border-radius: 5px;
-    }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #222;
+        }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
 
-    .social-icons a {
-        font-size: 18px;
-    }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
 
-    footer {
-        padding: 15px;
-    }
-}
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            font-size: 18px;
+            color: white;
+        }
+
         @media (max-width: 768px) {
-    .hero {
-        height: 80vh;
-        padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .portfolio-section {
-        padding: 30px 10px;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-    }
-
-    .project-card {
-        padding: 15px;
-        font-size: 14px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        padding: 20px;
-    }
-
-    .gallery img {
-        border-radius: 5px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    .social-icons a {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <header>Portfólio - Layla Cristina<div class="social-icons">
-            <a href="mailto:layyladantas@gmail.com" target="_blank">
+<header>
+    <span>Portfólio - Layla Cristina</span>
+    <div class="social-icons">
+        <a href="mailto:layyladantas@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
         </a>
         <a href="https://www.instagram.com/seu_instagram" target="_blank">
@@ -131,71 +115,37 @@
         <a href="https://wa.me/5511948572007" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        </div></header>
+    </div>
+</header>
 
-    <section class="hero">
-        <h1>Layla Cristina</h1>
-        <p>Designer Gráfica | Criadora de Conteúdo</p>
-        <img src="imagem/logopng.png" alt="Projeto 1">
-        
-    </section>
+<section class="hero">
+    <h1>Layla Cristina</h1>
+    <p>Designer Gráfica | Criadora de Conteúdo</p>
+    <img src="imagem/logopng.png" alt="Projeto 1">
+</section>
 
-    <section class="portfolio-section">
-        <h2>Meus Projetos</h2>
-        <div class="grid-container">
-            <div class="project-card">
-                <h3>Design Gráfico</h3>
-                <p>Criação de logos, banners e materiais visuais.</p>
-            </div>
-            <div class="project-card">
-                <h3>Criação de sites</h3>
-                <p>Criação de Vitrines,Portifolio e sites</p>
-            </div>
-            <div class="project-card">
-                <h3>Tráfego Pago</h3>
-                <p>Campanhas publicitárias para aumentar engajamento.</p>
-            </div>
-            <div class="project-card">
-                <h3>Cartão de Cartão</h3>
-                <p>Cartão virtual</p>
-            </div>
-            <div class="project-card">
-                <h3>Vitrine</h3>
-                <p>Montagem criativa para destacar seus produtos</p>
-            </div>
-            <div class="project-card">
-                <h3>Convite Interativo</h3>
-                <p>Design exclusivo para qualquer evento</p>
-            </div>
-        </div>
-    </section>
+<section class="portfolio-section">
+    <h2>Meus Projetos</h2>
+    <div class="grid-container">
+        <div class="project-card"><h3>Design Gráfico</h3><p>Criação de logos e banners.</p></div>
+        <div class="project-card"><h3>Criação de Sites</h3><p>Vitrines e portfólios.</p></div>
+        <div class="project-card"><h3>Tráfego Pago</h3><p>Campanhas publicitárias.</p></div>
+        <div class="project-card"><h3>Cartão Virtual</h3><p>Cartões personalizados.</p></div>
+        <div class="project-card"><h3>Vitrine</h3><p>Montagem criativa.</p></div>
+        <div class="project-card"><h3>Convite Interativo</h3><p>Convites exclusivos.</p></div>
+    </div>
+</section>
 
+<section class="gallery">
+    <img src="imagem/logo01.jpeg" alt="Projeto 1">
+    <img src="imagem/foto7.jpeg" alt="Projeto 2">
+    <img src="imagem/foto3.jpeg" alt="Projeto 3">
+    <img src="imagem/foto4.jpeg" alt="Projeto 4">
+    <img src="imagem/foto5.jpeg" alt="Projeto 5">
+    <img src="imagem/foto6.jpeg" alt="Projeto 6">
+</section>
 
-
-
-
-    <section class="gallery">
-        <img src="imagem/logo01.jpeg" alt="Projeto 1">
-        <img src="imagem/foto7.jpeg" alt="Projeto 2">
-        <img src="imagem/foto3.jpeg" alt="Projeto 3">
-        <img src="imagem/foto4.jpeg" alt="Projeto 4">
-        <img src="imagem/foto5.jpeg" alt="Projeto 4">
-        <img src="imagem/foto6.jpeg" alt="Projeto 4">
-    </section>
-    <section class="gallery">
-        <img src="imagem/portifolio.png" alt="Projeto 1">
-        <img src="imagem/portifolio02.png" alt="Projeto 2">
-        
-    </section>
-    <section class="gallery">
-        <img src="imagem/cartao.png" alt="Projeto 1">
-        <img src="imagem/cartao2.png" alt="Projeto 2">
-        <img src="imagem/cartao3.png" alt="Projeto 2">
-       
-    </section>
-
-
-    <footer>
+<footer>
     <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
     <div class="social-icons">
         <a href="mailto:layyladantas@gmail.com" target="_blank">
