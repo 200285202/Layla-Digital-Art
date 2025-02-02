@@ -122,26 +122,44 @@ header h1 {
 }
 
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto clara */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 30px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho de fonte agradável */
+}
+
+footer p {
+    margin-bottom: 20px; /* Espaço entre o texto e os ícones */
+    font-size: 1.1rem; /* Aumenta um pouco o tamanho do texto */
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
-    font-size: 1.5rem; /* Tamanho maior dos ícones */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
 }
 
 .social-icons a {
-    color: #333;
+    color: #fff; /* Cor dos ícones */
+    font-size: 1.5rem; /* Tamanho maior dos ícones */
     transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #ff6600; /* Cor quando o ícone é hover */
+    color: #ff6600; /* Cor de hover para os ícones */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte em telas pequenas */
+        padding: 20px 10px; /* Menos espaçamento em telas pequenas */
+    }
+
+    .social-icons {
+        gap: 15px; /* Menos espaçamento entre os ícones */
+    }
 }
 @media (max-width: 600px) {
     .hero h1 {
@@ -420,7 +438,7 @@ header h1 {
     </div>
 </section>
 
-    <footer>
+   <footer>
     <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
     <div class="social-icons">
         <a href="mailto:layyladantas@gmail.com" target="_blank">
