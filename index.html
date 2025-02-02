@@ -53,11 +53,14 @@ header {
 }
 
 .hero-content {
-    position: relative; /* Mantém o conteúdo acima do vídeo */
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    position: relative; /* Mantém a logo e o texto acima do vídeo */
+    z-index: 1; /* Garante que esteja acima do fundo */
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-content h1, .hero-content p {
@@ -65,8 +68,9 @@ header {
 }
 
 .logo {
-    animation: logoAnimation 2s infinite ease-in-out;
     width: 150px; /* Ajuste conforme necessário */
+    max-width: 100%;
+    animation: logoAnimation 2s infinite ease-in-out;
 }
 
 @keyframes logoAnimation {
@@ -160,7 +164,7 @@ footer {
         </a>
         </div></header>
 
-   <section class="hero">
+  <section class="hero">
     <div class="hero-background">
         <video autoplay muted loop>
             <source src="imagem/video.mp4" type="video/mp4">
@@ -171,7 +175,7 @@ footer {
     <div class="hero-content">
         <h1 class="typing-effect">Layla Cristina</h1>
         <p>Designer Gráfica | Criadora de Conteúdo</p>
-        <img src="imagem/logopng.png" alt="Projeto 1" class="logo">
+        <img src="imagem/logopng.png" alt="Logo Layla Cristina" class="logo">
     </div>
 </section>
 
