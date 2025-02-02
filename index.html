@@ -197,40 +197,14 @@ footer {
     }
 }
 
- .testimonial-card {
-    background: #444;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.testimonial-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-}
-
-.testimonial-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.testimonial-card h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-
-
-
- .testimonials {
+.testimonials {
     padding: 50px 20px;
     background: #222;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .testimonials h2 {
@@ -242,9 +216,9 @@ footer {
 .testimonial-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alinha os cards no centro */
+    justify-content: center; /* Alinha os cards */
     gap: 20px;
-    max-width: 900px; /* Define um limite para não esticar demais */
+    max-width: 1000px; /* Define um limite de largura */
     margin: 0 auto;
     padding: 20px;
 }
@@ -257,7 +231,7 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
     max-width: 300px;
     text-align: center;
-    flex: 1 1 280px; /* Permite que os cards se ajustem sem ficarem desorganizados */
+    flex: 1 1 280px; /* Mantém os cards organizados */
 }
 
 .testimonial-card:hover {
@@ -274,6 +248,7 @@ footer {
 .testimonial-card h4 {
     font-size: 1.2rem;
     font-weight: bold;
+    color: #fff;
 }
 
 /* Responsividade */
