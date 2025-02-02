@@ -214,14 +214,20 @@
     font-weight: bold;
 }
 
+.extra-content {
+    display: none;
+}
 
+.extra-content.visible {
+    display: block;
+}
         
     </style>
 </head>
 <body>
 
 <header>
-<h1 class="typing-effect">Layla Cristina - Designer Gráfico</h1>
+ <header>Portfólio - Layla Cristina<div class="social-icons">
     <div class="social-icons">
         <a href="mailto:layyladantas@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
@@ -236,7 +242,7 @@
 </header>
 
 <section class="hero">
-    <h1>Layla Cristina</h1>
+   <h1 class="typing-effect">Layla Cristina </h1>
     <p>Designer Gráfica | Criadora de Conteúdo</p>
     <img src="imagem/logopng.png" alt="Projeto 1">
 </section>
@@ -313,6 +319,12 @@
         </div>
     </div>
 </section>
+
+
+    <button onclick="toggleContent()">Mostrar mais</button>
+<div class="extra-content">
+    <p>Conteúdo extra que aparece ao clicar no botão.</p>
+</div>
 
 
     <script>
