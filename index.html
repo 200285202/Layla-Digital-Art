@@ -198,6 +198,52 @@ footer {
 }
 
 
+
+
+
+
+        .testimonials {
+    background: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
         
     </style>
 </head>
@@ -278,14 +324,25 @@ footer {
         <img src="imagem/portifolio.png" alt="Projeto 1">
         <img src="imagem/portifolio02.png" alt="Projeto 2">
         
-    </section>
-    <section class="gallery">
-        <img src="imagem/cartao.png" alt="Projeto 1">
-        <img src="imagem/cartao2.png" alt="Projeto 2">
-        <img src="imagem/cartao3.png" alt="Projeto 2">
-       
-    </section>
 
+
+        <section class="testimonials">
+    <h2>O Que Nossos Clientes Dizem</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>"O trabalho da Layla superou todas as minhas expectativas. Ela conseguiu transformar minha visão em um design perfeito para o meu negócio. Recomendo a todos!"</p>
+            <h4>- João Silva, Empresário</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"Layla é extremamente talentosa e profissional. O design do meu site ficou incrível, e ela entregou tudo antes do prazo!"</p>
+            <h4>- Maria Oliveira, Proprietária de Loja</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"O design da Layla realmente fez meu projeto se destacar. Ela é detalhista e atenta às necessidades do cliente. Fiquei muito satisfeita com o resultado final!"</p>
+            <h4>- Carla Pereira, Freelancer</h4>
+        </div>
+    </div>
+</section>
 
     <footer>
     <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
