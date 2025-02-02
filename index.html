@@ -118,6 +118,62 @@
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+
+    .blog {
+    background: #222;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.post-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 1.1rem;
+}
+
+.post-card a {
+    color: #f0c500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+        
     </style>
 </head>
 <body>
@@ -173,6 +229,31 @@
     <img src="imagem/foto5.jpeg" alt="Projeto 5">
     <img src="imagem/foto6.jpeg" alt="Projeto 6">
 </section>
+
+
+
+    <section class="blog">
+    <h2>Blog</h2>
+    <div class="blog-posts">
+        <div class="post-card">
+            <h3>O Futuro do Design Gráfico</h3>
+            <p>Explorando as tendências de design gráfico e como elas estão moldando o futuro da comunicação visual. <a href="link-para-o-artigo.html">Leia mais</a></p>
+        </div>
+        <div class="post-card">
+            <h3>Como Criar um Portfólio de Sucesso</h3>
+            <p>Dicas essenciais para construir um portfólio incrível que atraia clientes e oportunidades. <a href="link-para-o-artigo.html">Leia mais</a></p>
+        </div>
+        <div class="post-card">
+            <h3>Tráfego Pago: O Que Você Precisa Saber</h3>
+            <p>Entenda como usar o tráfego pago para aumentar sua visibilidade e engajamento online. <a href="link-para-o-artigo.html">Leia mais</a></p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    
 
 <footer>
     <p>&copy; 2025 Layla Cristina | Todos os direitos reservados.</p>
