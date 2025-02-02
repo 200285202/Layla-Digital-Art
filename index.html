@@ -20,9 +20,19 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    font-size: 24px;
-    background: #111;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+    border-bottom: 2px solid #ddd; /* Linha separadora abaixo */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espaço entre o título e os ícones */
+    color: #333;
 }
 
 .hero {
@@ -119,17 +129,20 @@ footer {
     margin-top: 30px;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+    font-size: 1.5rem; /* Tamanho maior dos ícones */
+}
+
 .social-icons a {
-    color: red;
-    margin: 0 20px;
-    font-size: 30px; /* Aumentado de 20px para 30px */
+    color: #333;
     transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: yellow;
+    color: #ff6600; /* Cor quando o ícone é hover */
 }
-
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -271,8 +284,10 @@ footer {
 </head>
 <body>
 
-    <header>Portfólio - Layla Cristina<div class="social-icons">
-            <a href="mailto:layyladantas@gmail.com" target="_blank">
+    <header>
+    <h1>Portfólio - Layla Cristina</h1>
+    <div class="social-icons">
+        <a href="mailto:layyladantas@gmail.com" target="_blank">
             <i class="fa-solid fa-envelope"></i>
         </a>
         <a href="https://www.instagram.com/seu_instagram" target="_blank">
@@ -281,7 +296,8 @@ footer {
         <a href="https://wa.me/5511948572007" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        </div></header>
+    </div>
+</header>
 
   <section class="hero">
     <div class="hero-background">
