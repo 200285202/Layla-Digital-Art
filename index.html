@@ -63,9 +63,9 @@ header h1 {
 }
 
 .hero-content {
-    position: relative; /* Mantém a logo e o texto acima do vídeo */
-    z-index: 1; /* Garante que esteja acima do fundo */
-    background: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    position: relative; 
+    z-index: 1; 
+    background: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -79,9 +79,9 @@ header h1 {
 
 .logo {
     width: 600px; /* Aumentei a largura da logo */
-    height: auto; /* Mantém a proporção correta */
-    max-width: 100%;
+    height: auto; 
     animation: logoAnimation 2s infinite ease-in-out;
+    max-width: none; /* Removido para permitir o aumento sem restrição */
 }
 
 @keyframes logoAnimation {
@@ -89,12 +89,13 @@ header h1 {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-30px); /* Aumentei o deslocamento da animação */
+        transform: translateY(-30px); 
     }
     100% {
         transform: translateY(0);
     }
 }
+
 
 
 /* Garantir que o container da galeria ocupe a largura total */
