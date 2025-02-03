@@ -63,14 +63,16 @@ header h1 {
 }
 
 .hero-content {
-    position: relative; 
-    z-index: 1; 
-    background: rgba(0, 0, 0, 0.5); 
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Certifique-se que ocupa 100% da largura */
+    max-width: 100%; /* Permite ocupar toda a largura possível */
 }
 
 .hero-content h1, .hero-content p {
@@ -78,12 +80,11 @@ header h1 {
 }
 
 .logo {
-    width: 600px; /* Aumentei a largura da logo */
-    height: auto; 
+    width: 800px; /* Aumente ainda mais o tamanho da logo */
+    height: auto;
     animation: logoAnimation 2s infinite ease-in-out;
     max-width: none; /* Removido para permitir o aumento sem restrição */
 }
-
 @keyframes logoAnimation {
     0% {
         transform: translateY(0);
