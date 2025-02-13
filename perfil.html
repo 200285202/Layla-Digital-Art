@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    /* Container de apresentação com fundo transparente */
+   .presentation {
+  /* Fundo com gradiente sutil e opacidade */
+  background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(20,20,20,0.85));
+  padding: 60px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 120px auto 50px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de borda luminosa com blur usando pseudo-elemento */
+.presentation::before {
+  content: \"\";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff0000, #ff6600);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+.presentation h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.presentation h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ff0000;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.presentation p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #ff0000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+
+
+     .footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Cores específicas para cada ícone */
+.social-icons a:nth-child(1) { color: #25D366; } /* WhatsApp */
+.social-icons a:nth-child(2) { color: #1877F2; } /* Facebook */
+.social-icons a:nth-child(3) { color: #E4405F; } /* Instagram */
+
+
+
+    /* Navbar estilizada */
+.navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    /* Logo */
+    .logo img {
+      height: 80px;
+    }
+    /* Lista de links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin: 0 15px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+.menu-toggle {
+      margin-left: auto; /* Empurra o botão para a direita */
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: none; /* Exibido apenas em telas pequenas */\n    }
+     @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links li {
+        margin: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+
+
+     .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .video-background video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Exemplo de conteúdo para demonstrar que o vídeo está atrás de tudo */
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+
+
+    .menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo responsivo para menu hambúrguer */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+        <div class="navbar-brand"> <img src="logo.png" width="20%" alt="logo"> </div>
+        <button class="menu-toggle" aria-label="Abrir Menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="perfil.html">Sobre</a></li>
+            <li><a href="meuserviço.html">Serviços</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
+    </script>
+
+
+
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video6.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+    <!-- Overlay para melhorar a leitura -->
+    <div class="overlay"></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+   
+
+
+  <div class="presentation" id="sobre">
+    <h1>Sobre Mim</h1>
+    <img src="eu.png" alt="Layla Cristina" class="profile-photo">
+    <h1>Layla Cristina Dantas</h1>
+    <p>
+      Sou <strong>designer gráfica</strong> apaixonada por transformar ideias em soluções visuais criativas e impactantes. 
+      Com experiência em <em>branding</em>, design digital e edição de vídeos, ajudo marcas e negócios a se destacarem de forma única e profissional.
+    </p>
+    <h3>💼 Minhas Experiências</h3>
+    <p>
+      Durante minha trajetória, participei de projetos incríveis, desenvolvendo desde <strong>identidades visuais</strong> marcantes até 
+      estratégias de <strong> e tráfego pago</strong>. Meu foco é criar materiais que cativem e gerem resultados.
+    </p>
+    <p>
+      🔥 Se você busca uma designer com <strong>criatividade, estratégia e entrega ágil</strong>, estou pronta para transformar suas ideias em realidade! 🚀
+    </p>
+    <h3>🛠️ Minhas Habilidades</h3>
+    <p>
+      <strong>Photoshop -</strong>
+      <strong>Illustrator -</strong>
+      <strong>Premiere -</strong>
+      <strong>CapCut -</strong>  
+      <strong>Canva -</strong>  
+    </p>
+
+    <h3>💡 Por Que Trabalhar Comigo?</h3>
+    <p>
+    <ul>
+     <li><strong>Atendimento personalizado:</strong> Entendo sua necessidade e crio algo exclusivo para você.</li>
+      <li><strong>Atendimento personalizado:</strong> Cada peça é pensada para gerar impacto e conversões.</li>
+      <li><strong>Agilidade e comprometimento:</strong>Entrego com qualidade e dentro do prazo.</li>
+    </ul>
+    </p>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </div>
+  <div class="social-icons">
+    <!-- Ícones sociais aqui -->
+    <div class="social-icons">
+        <a href="https://wa.me/5511948572007" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/5511948572007" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/layla_com_y?igsh=djNnZHFuazVobDMy" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</body>
+</html>
